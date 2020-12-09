@@ -1,0 +1,279 @@
+
+
+ /* @import url('https://fonts.googleapis.com/css?family=Quicksand'); */
+ /*@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');*/
+
+ .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html,body {
+  height: 100%;
+} 
+
+.wrapper {
+  height: 100%;
+  font-family: 'Gill sans', sans-serif;
+  /*
+    line-height: 1.25;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  */
+}
+
+/* Slide out menu start */
+.sidepanel  {
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  height: 558px;
+  top: 0;
+  right: 0;
+  background-color: #fb2b11;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 30px;
+}
+
+.triangle {
+  width:0;
+  height:0;
+  border-top: 558px solid red;
+  border-left: 558px solid transparent;
+}
+
+.sidepanel a {
+  padding: 5px 1px 5px 50px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #080000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #D5D1D0;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 40px;
+  position: absolute;
+  position: fixed;
+  cursor: pointer;
+  background-color:transparent;
+  color: #fb2b11;
+  right: 0;
+  padding-right: 10px;
+  padding-top: 0px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #fb2b11;
+}
+/* Slide out menu end */
+
+.wbg {
+  font-size: 5px;
+  text-align: center; 
+}
+
+.picture {
+  display:inline-block;
+}
+
+/* BW spoke ceiling background 
+.bg-1 {
+  background-image: url("images/Circular_spoke_ceiling_BW.png");
+  opacity: 1.0;
+  background-size: cover;
+}
+*/
+
+/* Colour spoke ceiling background */
+.bg-2 {
+  background-image: url("images/Adelaide _Oval_Boutique_Hotel_front.jpg");
+  opacity: 1.0;
+ 
+  background-size: cover;
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%; 
+  width: 100%;
+  font-size: 100px;
+  color: #fb2b11; 
+  text-align: center;
+  display: table;
+}
+
+/*
+.thumbnail {
+  height:400px;
+  width:100%;
+  border: 0px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+}
+*/
+
+.fixed-bg h1 {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 150px;
+}
+
+.fixed-bg h2 {
+  display: table-cell;
+  text-align: left;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+
+h4 {
+  padding: 3px;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.scroll-bg {
+  background-color:white;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  color: #fb2b11;
+}
+
+p {
+  font-size: medium;
+}
+
+.content {
+  font-family: "gill sans", sans-serif;
+  color: #000000;
+  padding: 10px 50px;
+}
+
+.row-bottom-margin { 
+  margin-bottom:10px; 
+}
+
+.projects {
+  color: #000000;
+  padding-left: 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.intro {
+  background-color: white;
+  padding-top: 50px;color: ;
+  padding-bottom: 40px;
+  border-radius: 5px;
+  color: #000000;
+  text-align: justify;
+}
+
+hr {
+  height: 20px;
+  background-color: #000;
+  border: 5px;
+}
+
+/*
+.viewMore {
+  background-color: #424146;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-align: center;
+}
+*/
+
+.footerColThree {
+  color: #000;
+  text-align: left;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.footerColOne {
+  color: #000;
+  text-align: left; 
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.footerColTwo {
+  color: #000;
+  text-align: left;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-bottom: 10px;
+}
+
+/*
+.endFooter {
+  color: black;
+  padding-left: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+*/
+
+/*
+flip card
+*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 500ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}

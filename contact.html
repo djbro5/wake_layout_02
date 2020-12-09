@@ -1,0 +1,83 @@
+<!-- Wake Construction Group landing page -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wake Construction Group landing page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+        
+        <!-- Slide out menu section -->
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#" Style=color:#D5D1D0>Home</a>
+    <a href="Wake_System.html">Wake Construction System</a>
+    <a href="#">Projects</a>
+    <a href="#">Testamonials</a>
+    <a href="#">About Us</a>
+    <a href="#">Community</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  
+  <!-- ☰  MENU -->
+  <button class="openbtn" onclick="openNav()">☰ MENU</button>  <!-- expand sidepanel -->
+  <!-- end -->
+
+    <div class="main">
+        <div class="row">
+            <div class="col-sm-9"style=color:black><h1>Contact</h1>All enquiries: - please send us a message and we will reply promptly.</div>
+            <div class="col-sm-3" ></div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-12">
+              <hr class="rule">
+          </div>
+        </div>
+
+            <form action=”mailto:info@wcg.com.au”
+            method=”POST”
+            enctype=”multipart/form-data”
+            name=”Email”>
+                <div class="form-group">
+                  <label for="FormControlName">Name</label>
+                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Brown">
+                </div>
+
+                <div class="form-group">
+                  <label for="FormControlEmail">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+               
+                <div class="form-group">
+                  <label for="formControlMessage">Message</label>
+                  <textarea class="form-control" id= messageTextarea" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="formControlSubmit"></label>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+              </form>            
+        </div>
+    </div>
+
+    
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>
