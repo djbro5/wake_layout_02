@@ -3,7 +3,14 @@
  /* @import url('https://fonts.googleapis.com/css?family=Quicksand'); */
  /*@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');*/
 
- .clearfix::after {
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
@@ -15,7 +22,9 @@ html,body {
 
 .wrapper {
   height: 100%;
+  padding: 0em;
   font-family: 'Gill sans', sans-serif;
+  background-color: #343A40;
   /*
     line-height: 1.25;
   word-spacing: 4px;
@@ -26,7 +35,7 @@ html,body {
 /* Slide out menu start */
 .sidepanel  {
   width: 0;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   height: 558px;
   top: 0;
@@ -37,12 +46,14 @@ html,body {
   padding-top: 30px;
 }
 
+/*
 .triangle {
   width:0;
   height:0;
   border-top: 558px solid red;
   border-left: 558px solid transparent;
 }
+*/
 
 .sidepanel a {
   padding: 5px 1px 5px 50px;
@@ -65,7 +76,6 @@ html,body {
 }
 
 .openbtn {
-  font-size: 40px;
   position: absolute;
   position: fixed;
   cursor: pointer;
@@ -80,6 +90,8 @@ html,body {
 .openbtn:hover {
   background-color: #fb2b11;
 }
+
+
 /* Slide out menu end */
 
 .wbg {
@@ -91,20 +103,14 @@ html,body {
   display:inline-block;
 }
 
-/* BW spoke ceiling background 
-.bg-1 {
-  background-image: url("images/Circular_spoke_ceiling_BW.png");
-  opacity: 1.0;
-  background-size: cover;
-}
-*/
-
-/* Colour spoke ceiling background */
+/* Adelaide oval hotel background */
 .bg-2 {
   background-image: url("images/Adelaide _Oval_Boutique_Hotel_front.jpg");
-  opacity: 1.0;
- 
   background-size: cover;
+}
+
+.col-sm-4 {
+  padding: 10px;
 }
 
 .fixed-bg {
@@ -120,21 +126,11 @@ html,body {
   display: table;
 }
 
-/*
-.thumbnail {
-  height:400px;
-  width:100%;
-  border: 0px solid #000000;
-  border-radius: 5px;
-  text-align: center;
-}
-*/
-
 .fixed-bg h1 {
   display: table-cell;
   vertical-align: middle;
   font-weight: 500;
-  font-size: 150px;
+  font-size: 95px;
 }
 
 .fixed-bg h2 {
@@ -143,7 +139,6 @@ html,body {
   font-weight: 500;
   font-size: 50px;
 }
-
 
 h4 {
   padding: 3px;
@@ -165,12 +160,25 @@ h3 {
 
 p {
   font-size: medium;
+  font-weight: lighter;
 }
 
 .content {
   font-family: "gill sans", sans-serif;
   color: #000000;
-  padding: 10px 50px;
+  padding: 0px 0px;
+}
+
+.card-body {
+  color:#ffffff;
+}
+
+.card-text {
+  color: #000;
+}
+
+.card-text-contact {
+  color: #ffffff;
 }
 
 .row-bottom-margin { 
@@ -178,58 +186,43 @@ p {
 }
 
 .projects {
-  color: #000000;
-  padding-left: 10px;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  color: #000;
+  padding-left: 5px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+
 }
 
 .intro {
   background-color: white;
-  padding-top: 50px;color: ;
+  padding-top: 50px;
   padding-bottom: 40px;
   border-radius: 5px;
   color: #000000;
   text-align: justify;
 }
 
-hr {
-  height: 20px;
-  background-color: #000;
-  border: 5px;
+hr.solid {
+  border-top: 10px solid #343a40;
 }
-
-/*
-.viewMore {
-  background-color: #424146;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  border-radius: 5px;
-  color: #ffffff;
-  text-align: center;
-}
-*/
 
 .footerColThree {
-  color: #000;
   text-align: left;
-  padding-right: 40px;
+  padding-right: 20px;
   padding-top: 20px;
   padding-left: 100px;
   padding-bottom: 20px;
 }
 
 .footerColOne {
-  color: #000;
   text-align: left; 
   padding-right: 20px;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 120px;
   padding-bottom: 10px;
 }
 
 .footerColTwo {
-  color: #000;
   text-align: left;
   padding-right: 70px;
   padding-top: 20px;
@@ -237,19 +230,16 @@ hr {
   padding-bottom: 10px;
 }
 
-/*
-.endFooter {
-  color: black;
-  padding-left: 250px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
+.footer {
+  color:  #fff;
+  background-color: #343a40;
+  background-size: cover;
+  float: left;
+  width: 100%;
+ 
 }
-*/
 
-/*
-flip card
-*/
+/* flip card */
 .card-flip > div {
   backface-visibility: hidden;
   transition: transform 500ms;
@@ -258,6 +248,14 @@ flip card
   height: 100%;
   margin: 0;
   display: flex;
+}
+
+#contactCard {
+  width: 100%;
+  height: 100%;
+  margin: 10;
+  display: flex;
+  padding: 0px;
 }
 
 .card-front {
