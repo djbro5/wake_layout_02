@@ -7,15 +7,12 @@
   <title>Wake Construction Group landing page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="style.css">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel=“stylesheet”>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body>
   <!-- wrapper div starts --> 
-  <div class="wrapper">
+<div class="wrapper">
   
     <!-- Slide out menu -->
     <div id="mySidepanel" class="sidepanel">
@@ -26,14 +23,14 @@
       <a href="#linings" onclick="closeNav()">Linings</a>
       <a href="#about_us" onclick="closeNav()">About Us</a>
       <a href="#system" onclick="closeNav()">Wake Construction System</a>
-      <a href="#contact_us" onclick="closeNav()">Contact Us</a>
+      <a href="contact.html" onclick="closeNav()">Contact Us</a>
       <a href="#projects" onclick="closeNav()">Projects</a>
     </div>
   
-    <!-- Wake header headings section -->
-    <div class="fixed-bg bg-2">
+  <!-- Wake header headings section -->
+  <div class="fixed-bg bg-2">
     <div class="row">
-      <!-- column 1.1 -->
+    <!-- column 1.1 -->
       <div class="container col-sm-9">
         <h2 style="padding-top: 20px;padding-left: 40px; text-align: left;"><b>WAKE CONSTRUCTION GROUP</b></h2>
       </div>
@@ -50,11 +47,16 @@
               padding-bottom: 0;">
           <b>CONSTRUCTION<br>CARPENTRY<br>LININGS</b>
         </h1> 
-        </div>
+      </div>
     </div>
-    </div>
-    <!-- end section -->
+    <div class="bottom">
+      <p id="scroll" onclick="messageFunct()" ><i class="arrow"></i></p>
+      <div class="overlay">Scroll down</div>
+    </div>  
+  </div>
+  <!--  Wake header headings section end -->
 
+ 
     <div class="container">
       <div class="clearfix"> 
       <div class="scroll-bg">
@@ -69,7 +71,8 @@
           <h3><b>COMMERCIAL and RESIDENTIAL</b></h3>
           <p style="font-size: 20px">The Wake Construction Group is a long-established construction and contractor company.
             We provide comprehensive building services to the COMMERCIAL and RESIDENTIAL construction industry and always successfully deliver
-             on projects. Our involvement include multi award-winning projects and our project scope is large commercial to small residential.</p>
+             on projects. Our involvement include multi award-winning projects and our project scope is from large commercial projects to small residential work.
+            In particular, we specialise in construction of aged care facilities. Read more about our capabilities by scrolling cursor over the sections below.</p>
         </div>
         <!-- column 1.2 -->
         <div class="container col-sm-6" style="padding-bottom: 5px;">
@@ -79,6 +82,8 @@
             of trust, honesty, transparency and innovation, it is our dedicated, experienced team that sets us apart, on quality, 
             on budget and on time.</p>
             <h3 style="color: #fb2b11;"><b>Proficiency + Knowledge + Experience</b></h3>   
+            <p style="font-size: 20px">Contact us today to discuss your project needs<br>P - 08 8353 5350 <br>
+              E - <a href="contact.html" style="color:#fb2b11;" >info@wcg.com.au</a></p>
         </div>
       </div>
     </div>
@@ -95,16 +100,18 @@
                 <div class="text-center">
                   <h4 class="card-title"><b>CONSTRUCTION</b></h4>
                 </div>
-                <img src="images/Construction_long.JPEG" alt="" class="img-responsive" style="width:100%">  
+                <img src="images/Construction_long.png" alt="" class="img-responsive" style="width:100%">  
               </div>
           </div>
           <div class="card-back bg-dark">
               <div class="card-body">
                   <h4 class="card-title" id="construction">CONSTRUCTION</h4>
-                  <p class="card-text text-white">	Innovation – Construction systems, techniques and materials change. 
-                    We are always reviewing these sectors and how we can improve on traditional methodologies 
-                    for all aspects of delivery.</p>
-                  <a href="#" class="btn btn-outline-secondary">More</a>
+                  <p class="card-text text-white">The Wake Construction Group Construction Division specialise in Building Management, Project Management, Construction 
+                    Techniques and Project Estimation.<br><br>Our continuous improvement strategy covers all aspects of project delivery, in particular, the application of modern technology to
+                    construction systems, techniques and materials. Example is our use of Cross Laminated Panels as a modern construction material - see Carpentry for more information.
+                    
+                  </p>
+                  <!-- a href="#" class="btn btn-outline-secondary">More</a -->
               </div>
           </div>
         </div>
@@ -117,18 +124,19 @@
                   <div class="text-center">
                     <h4 class="card-title"><b>CARPENTRY</b></h4>
                   </div>
-                  <img src="images\Spoke_ceiling_rectangular - Copy.png" alt="" class="img-responsive" style="width:100%">
+                  <img src="images/Spoke_ceiling_rectangular - Copy.png" alt="" class="img-responsive" style="width:100%">
               </div>
           </div>
           <div class="card-back bg-dark">
               <div class="card-body">
                   <h4 class="card-title">CARPENTRY</h4>
-                  <p class="card-text text-white">As well as all general carpentry, Wake specialise in the installation of CLT panels (Cross Laminated Timber)
-                    as a building material. CLT is considered the engineered wood of the future and is making the construction of entire buildings from timber a 
-                    reality. Its superior strength is a result of glued cross-laminating layers of wood veneer which improves the structural properties of wood by distributing 
+                  <p class="card-text text-white">As well as doing all general building carpentry work such as construction of timber building frameworks and structures 
+                    including stairways, door frames with doors, and windows, Wake Construction Group Carpentry Division specialise in the application of CLT panels (Cross Laminated Timber)
+                    as a building material. <br><br>CLT is considered the engineered wood of the future and is making the construction of entire buildings from timber a 
+                    reality.<br><br>CLT's superior strength is a result of glued cross-laminating layers of wood veneer which improves the structural properties of wood by distributing 
                     the along-the-grain strength of wood in both directions.This results in a timber panel that can be used to form complete floors, walls 
-                    and roofs.The potential of CLT as a sustainable building material is only just being realised around the globe."</p>
-                  <a href="#" class="btn btn-outline-secondary">More</a> 
+                    and roofs.The potential of CLT as a sustainable building material is only just being realised around the globe, of which,Wake Construction Group is at the forefront."</p>
+                  <!-- a href="#" class="btn btn-outline-secondary">More</a --> 
               </div>
           </div>
       </div>
@@ -142,18 +150,18 @@
                       <h4 class="card-title"><b>LININGS</b></h4>
                     </div>
                     
-                    <img src="images\Modern_ceiling.jpg" alt="" class="img-responsive" style="width:100%">
+                    <img src="images/Modern_ceiling.jpg" alt="" class="img-responsive" style="width:100%">
                 </div>
             </div>
             <div class="card-back bg-dark">
                 <div class="card-body">
                     <h4 class="card-title">LININGS</h4>
-                    <p class="card-text text-white">Wake Linings understand the commercial and residential building demands put on 
-                      wall and ceiling linings, of which, have a lasting impact on the comfort, amenity and performance of occupants.  
-                      Our skilled tradespeople employ rapid installation and plasterboard finishing techniques that give you significant 
+                    <p class="card-text text-white">Wake Construction Group Linings Division understand the commercial and residential building demands put on 
+                      wall and ceiling linings, of which, have a lasting impact on the comfort, amenity and performance of occupants.<br><br> 
+                      Our skilled tradespeople employ rapid installation and plasterboard finishing techniques that can give you significant 
                       cost savings. We specialise in the construction of Shaft Wall Systems for fire rated performance, acoustic performance 
-                      linings and decorative finish linings.</p>
-                    <a href="#" class="btn btn-outline-secondary">More</a>
+                      linings as well as decorative finish linings.</p>
+                    <!-- a href="#" class="btn btn-outline-secondary">More</a -->
                 </div>
             </div>
         </div>        
@@ -177,14 +185,13 @@
           <div class="card-back bg-dark">
               <div class="card-body">
                   <h4 class="card-title" id="about_us">ABOUT US</h4>
-                  <p class="card-text text-white">	The Wake Construction Group was established in 1980 by carpenter builder Don Wake. 
-                    With a legacy built on consistently achieving results through hard work and fairness, the
-                    Wake Construction Group through the current leadership team, has grown to be a leading South Australian 
-                    based commercial and residential Construction and Interiors company. We currently employ
-                    more than 50 locally based staff and proudly provide jobs to hundreds more local subcontractors and suppliers.
-                    Wake Construction Group is a respected construction company with more than four decades of experience 
-                    in building excellence. We operate across the whole of South Australia.
-                    </p>
+                  <p class="card-text text-white">	The Wake Construction Group was established in 1980 by carpenter and builder Don Wake.
+                  From Don's legacy of consistently achieving results through hard work and fairness, the Wake Construction Group 
+                  has grown to become a leading South Australian COMMERCIAL and RESIDENTIAL construction, carpentry
+                  and linings company.<br><br>We have more than four decades of experience in building excellence and currently employ
+                  more than 50 locally based staff, not to mention that we provide jobs to hundreds more local subcontractors and suppliers.
+                  We operate across the whole of South Australia and are expanding interstate.
+                 <br><br> Our current leadership team is Don Wake - Business Owner, Tony Cirillo - General Manager, Matthew Wake - Carpentry, Chris - Linings, Darcy - Estimator and Carolyn - Administration. 
               </div>
           </div>
       </div>
@@ -205,10 +212,10 @@
           <div class="card-back bg-dark">
               <div class="card-body">
                   <h4 class="card-title text-white">WAKE CONSTRUCTION SYSTEM</h4>
-                  <p class="card-text text-white">	The Wake Construction System is our methodical approach with 
+                  <p class="card-text text-white">The Wake Construction System is our methodical and formalised approach with 
                     all projects. It is based on work methods learned from four decades of delivering quality buildings 
                     and creating client relationships. Simply put, our philosophy is to establish values of trust, integrity, honesty 
-                    and professionalism with our client. Our dedicated team will identify the factors 
+                    and professionalism with our client.<br><br>Our dedicated team will identify the factors 
                     that play a vital role in each project’s success. These factors can generally be summed up as:
                     •	Solutions Focus – Every challenge can be overcome with creative thinking that will lead to 
                     accomplishing the best possible outcome for the client and the construction team.
@@ -220,26 +227,27 @@
         </div>
         <!-- col 2.3 -->
             <div class="col-sm-4">
-              <div class="card h-100">
-                  <div id="contactCard">
+              <div class="card h-100" >
+                <!-- div id="contactCard" -->
                     <div class="card-front text-white bg-dark">
-                      <div class="card-body">
+                      <div class="card-body;" >
                         <div class="text-center">
-                          <h4 class="card-title"><b>CONTACT US</b></h4>
+                          <h4 class="card-title" style="padding-top: 20px;"><b>CONTACT US</b></h4>
                         </div>
-                        <div class="card-text-contact">
-                          <h5 style="padding-top: 24px; letter-spacing: -1px">WAKE CONSTRUCTION GROUP</h5>
-                          <h5 style=" padding-bottom: 20px;">BLD No. G10904</h5>
+                        <div class="card-text-contact; text-center ">
                           <hr style="height:2px;border:none;background-color:#ffffff"/>
-                          <h5 style="padding-bottom: 20px; padding-top: 20px;">147-149 William Street <br>Beverley SA 5009</h5>
+                          <h5 style="padding-top: 40px; letter-spacing: 1px;">WAKE CONSTRUCTION GROUP</h5>
+                          <h5 style=" padding-bottom: 40px;">BLD No. G10904</h5>
                           <hr style="height:2px;border:none;background-color:#ffffff"/>
-                          <h5 style="padding-top: 20px">P - 08 8353 5350</h5>
+                          <h5 style="padding-bottom: 40px; padding-top: 40px;">147-149 William Street <br>Beverley SA 5009</h5>
+                          <hr style="height:2px;border:none;background-color:#ffffff"/>
+                          <h5 style="padding-top: 35px;">P - 08 8353 5350</h5>
                           <a href="contact.html" style="color:#fb2b11;" ><h5>E - info@wcg.com.au</h5></a>
-                          <h5>Click for email contact page    </h5>
+                          <h5 style="padding-bottom: 60px;" >Click for email contact page</h5>   <!-- add media query -->
                       </div>
                     </div>
                 </div>
-              </div>       
+              <!-- /div -->       
             </div>
           </div>
         <!-- Cards information section end -->
@@ -253,84 +261,115 @@
       </div>
       <div class="col-sm-10">
         <div class="projects">
-          <h5><hr class="solid"></h5>
+          <hr class="solid" style="color: #000;">
         </div>
       </div>
-    </div> 
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="projects">
+              <p style="color: #000; font-size: 20px;">
+                  Wake Construction Group project capacity range from the small domestic to large commercial and we operate from local Adelaide to remote SA.
+                  Our dedicated group of construction specialists develop strong partnerships with clients, architects and consultants to always deliver projects 
+                  that exceed client expectations. Hover cursor over image below for project description.                                                             
+              </p>
+            </div>
+          </div>
+      </div> 
 
     <!-- project images section -->
       <!-- row 1 -->
       <div class="row row-bottom-margin">
-        <!-- column 1.1 -->
+        <!-- column 1.1  -->
         <div class="col-sm-8"> 
-          <div class="container_1">
-              <img src="images\Adelaide _Oval_Boutique_Hotel_front.jpg" alt="image 1" class="image" style="width:100%">
-              <div class="overlay">Oval Hotel, adjacent Adelaide Oval. Wake contracted to build sturucture with CLT (cross laminated timber) panels</div>
+          <div class="container_1">                     <!-- for hover over text description --> 
+              <div class="imgdiv01">                     <!-- set image height -->
+                <img src="images/Adelaide _Oval_Boutique_Hotel_front.jpg" alt="image 1" style="width:100%;"  >
+              </div>
+              <div class="overlay">Oval Hotel, adjacent Adelaide Oval. Sturucture constructed with CLT (cross laminated timber) panels.</div>
+              <!-- Insert in above for second image - make true on hover <a href="images/Adelaide _Oval_Boutique_Hotel_front.jpg" style="color:#000;" >click</a> -->
           </div>
         </div>
         <!-- column 1.2 -->
         <div class="col-sm-4">
-            <a href="" target="_blank">
-              <img src="images\Timber_steps-plant.jpg" alt="image 2" style="width:100%;height: 100%;">
-            </a>
+          <div class="container_1">                     <!-- for hover over text description -->                                           
+            <div class="imgdiv01">                       <!-- set image height -->
+              <img src="images/spoked_ceiling.png" alt="image 2" style="width: 100%">
+            </div>
+            <div class="overlay">Decorative spoked timber ceiling at Ngeringa Winery, Mount Barker in the Adelaide Hills.</div>
+          </div>
         </div>
       </div>
+
       <!-- Row 2 -->
       <div class="row  row-bottom-margin">
         <!-- column 2.1 -->
-        <div class="col-sm-4">
-            <a href="" target="_blank">
-              <img src="images/Gyprock lining.JPEG" alt="image 3" style="width:100%">
-            </a>
-
+        <div class="container col-sm-4">
+          <div class="container_1">                     <!-- for hover over text description -->       
+              <div class="imgdiv02">                    <!-- set image height -->
+                <img src="images/timber_theatre_03.jpg" alt="image 3" style="width:100%">
+              </div>
+              <div class="overlay">Timber facia at Ngeringa Winery, Mount Barker in the Adelaide Hills</div>
+          </div>
         </div>
         <!-- column 2.2-->
         <div class="container   col-sm-4">
-            <a href="" target="_blank">
-                <img src="images/Curved framing.JPEG" alt="image 4" style="width:100%">
-            </a>
+          <div class="container_1">  
+              <div class="imgdiv02">                    <!-- set image height -->           
+                <img src="images\Adelaide Zoo.jpg" alt="image 4" style="width:100%">
+              </div>
+              <div class="overlay">Timber decking Adelaide Zoo</div>
+          </div>
         </div>
         <!-- column 2.3-->
         <div class="container   col-sm-4">
-            <a href="" target="_blank">
-                <img src="images/Curved framing.JPEG" alt="image 4" style="width:100%">
-            </a>
+          <div class="container_1">  
+              <div class="imgdiv02">                    <!-- set image height -->
+                <img src="images\Resthaven-Murray-Bridge-redevelopment-02.jpg" alt="image 4" style="width:100%">
+              </div>
+              <div class="overlay">Resthaven Aged Care Murray Bridge Redevelopment</div>
+          </div>
         </div>
       </div>
+
       <!-- Row 3 -->
       <div class="row row-bottom-margin">
         <!-- column 3.1-->
         <div class="container col-sm-4">
-            <a href="" target="_blank">
-              <img src="images/IMG_2004.JPG" alt="image 5" style="width:100%; height: 100%;">
-            </a>
+          <div class="container_1">  
+              <div class="imgdiv03">                    <!-- set image height -->
+                <img src="images/Snake_seat_01.jpg" alt="image 5" style="width:100%">
+              </div>
+              <div class="overlay">Snake bench seating</div>
+          </div>
         </div>
-        
-        <!-- column 3.2 + 3.3-->
+        <!-- column 3.2 -->
         <div class="container col-sm-8">
-            <div class="container_1">
-              <img src="images/Head_of_Bight.png" alt="image 6" style="width:100%; height: 100%;">
-              <div class="overlay">Head of Bight Whale Watch Centre, 1060km west of Adelaide!</div>
-            </div>
+          <div class="container_1">                     <!-- for hover over text description --> 
+              <div class="imgdiv03">                    <!-- set image height -->
+                <img src="images/Head_of_Bight.png" alt="image 6" style="width:100%">
+              </div>
+              <div class="overlay">Head of Bight Whale Watch Centre. Located edge of Nullabor Plain and 1060km west from Adelaide!</div>
+          </div>  
         </div>
       </div>
     </div>  
     <!-- project images section end -->
     <!-- container end -->
     </div> 
-
   <!-- wrapper end -->
   </div>
+</div>
   
-    <!-- Row 7 info footer -->
-    <div class="footer" class="py-0 bg-dark text-white-100">
-        <div class="row">
+    <!-- Row 7 footer -->
+  <div class="footer py-0 bg-dark text-white-100">
+      <div class="row">
           <!-- First column -->
           <div class="container p-3  col-sm-4">
             <div class="footerColOne">
               <h5>Wake Construction Group<br>BLD No. G10904</h5>
             </div>
           </div>
+        
           <!-- Second column -->
           <div class="container p-3  col-sm-4">
             <div class="footerColTwo">
@@ -340,30 +379,26 @@
           <!-- Third column -->
           <div class="container p-3  col-sm-4">
             <div class="footerColThree">
-              <h5>P - 08 8353 5350<br><a href="contact.html" style="color:#fb2b11;" ><h5>E - info@wcg.com.au</h5></a>
+              <h5>P - 08 8353 5350</h5><br> <a href="contact.html" style="color:#fb2b11;" > <h5>E - info@wcg.com.au</h5></a>
             </div> 
           </div>
-        </div>
+      </div>
         <!-- end -->
 
-        <!-- Row 8 copyright footer -->
-        <div class="row" style="text-align: center; color: #fff;">
+      <div class="row" style="text-align: center; color: #fff;">
           <!-- Column --> 
           <div class="container p-3  col-sm-12"> 
             <div class="endFooter">
               <h6>Copyright &copy; 2020 Wake Construction Group - Site by ErgoAssistive Technology</h6>
             </div>
           </div>
-        </div>
-    <!-- footer end-->
+      </div>
   </div>
-  
-
+  <!-- footer end-->
 <!-- html end-->    
-</div> 
+</div>
 
 <script>
-
   /* open side menu */
   function openNav() {
     document.getElementById("mySidepanel").style.width = "450px";
@@ -373,23 +408,16 @@
     document.getElementById("mySidepanel").style.width = "0";
   }
 
-  function myFunction() {
-  alert("Hello! I am an alert box!");
-}
-
   /* project image popover display information event */
   $(document).ready(function(){
     $('[data-toggle="popover"]').popover();   
   });
-
 </script>
 
   <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Popper positioning engine  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <!-- Bootstrap 4 precompiled files -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 </body>  
 </html>
