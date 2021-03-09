@@ -1,4 +1,4 @@
-<!-- Wake Construction Group landing page -->
+<!-- Wake Construction Group CONTACT FORM -->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -8,72 +8,102 @@
   <title>Wake Construction Group landing page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {font-family: 'Helvetica condensed', sans-serif;}
+    * {box-sizing: border-box;}
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    input[type=submit] {
+      background-color: #fb2b11;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: #fb2b11;
+    }
+
+    input[type=button] {
+      background-color: #fb2b11;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type=button]:hover {
+      background-color: #fb2b11;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin: 20px;
+    }
+
+
+    </style>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
 
-  <div class="container-fluid">
-        
-        <!-- Slide out menu section -->
-  <div id="mySidepanel" class="sidepanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#" Style=color:#D5D1D0>Home</a>
-    <a href="Wake_System.html">Wake Construction System</a>
-    <a href="#">Projects</a>
-    <a href="#">Testamonials</a>
-    <a href="#">About Us</a>
-    <a href="#">Community</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
+    <div class="container" style="padding: 50px;">
+
+      <div class="row">
+        <div class="container-1 col-sm-12" >
+          <h1><b>Contact Us</b></h1>
+        </div>
+      </div>
+      <div class="row">
+            <div class="container-1 col-sm-5" style="padding-top: 20px;">
+                <h5><b>WAKE CONSTRUCTION GROUP</b></h5><h5>147-149 William Street<br>Beverley SA 5009</h5>
+                <h5>P - 08 8353 5350</h5><a href="contact.html" style="color:#fb2b11;" ><h5>E - info@wcg.com.au</h5></a>
+
+            </div>
+            <div class="container-1 col-sm-7">
+                <div class="container-1">
+                  <form method="post" action="formmail.php">
+                        <!-- <label for="name">Name:</label> -->
+                        <input type="text" id="fname" name="firstname" placeholder="Name&#42;">
   
-  <!-- ☰  MENU -->
-  <button class="openbtn" onclick="openNav()">☰ MENU</button>  <!-- expand sidepanel -->
-  <!-- end -->
+                        <!-- <label for="company">Company:</label> -->
+                        <input type="text" id="company" name="company" placeholder="Company">
+  
+                        <!-- <label for="phone">Contact phone:</label> -->
+                        <input type="text" id="phone" name="phone" placeholder="Phone&#42;">
 
-    <div class="main">
-        <div class="row">
-            <div class="col-sm-9"style=color:black><h1>Contact</h1>All enquiries: - please send us a message and we will reply promptly.</div>
-            <div class="col-sm-3" ></div>
-        </div>
-        
-        <div class="row">
-          <div class="col-sm-12">
-              <hr class="rule">
-          </div>
-        </div>
+                        <!-- <label for="phone">Contact email: </label> -->
+                        <input type="text" id="email" name="email" placeholder="Email&#42;">
+  
+                        <!-- <label for="subject">Your Query:</label> -->
+                        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+  
+                        <input type="submit" value="SEND"> <input type="button" onclick="window.location.href='index.html';"  value="Home">
 
-            <form action=”mailto:info@wcg.com.au”
-            method=”POST”
-            enctype=”multipart/form-data”
-            name=”Email”>
-                <div class="form-group">
-                  <label for="FormControlName">Name</label>
-                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Brown">
+                        <!--
+                        <div class="form-group">
+                          <label for="formControlSubmit"></label>
+                          <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                        -->
+                  </form>
                 </div>
-
-                <div class="form-group">
-                  <label for="FormControlEmail">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-               
-                <div class="form-group">
-                  <label for="formControlMessage">Message</label>
-                  <textarea class="form-control" id= messageTextarea" rows="4"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="formControlSubmit"></label>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                  </div>
-              </form>            
         </div>
+      </div>
     </div>
-
-    
-  </div>
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
