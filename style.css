@@ -324,12 +324,12 @@ img {
 .overlay {                                      /* for hover over text description */
   position: absolute; 
   top: 0; 
-  background: #fb2b11;
-  color: #000; 
+  background: #3d4d42;
+  color: #ffffff; 
   width: 50%;
   transition: .75s ease;
   opacity:0;
-  color: #000;
+  color: #ffffff;
   font-size: 16px;
   padding: 20px;
   text-align:left;
