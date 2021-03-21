@@ -80,7 +80,7 @@ p{
   position: fixed;
   cursor: pointer;
   background-color:transparent;
-  color: #fb2b11;
+  color: #000;
   right: 0;
   padding-right: 10px;
   padding-top: 0px;
@@ -95,11 +95,11 @@ p{
 /* ***** Scroll arrow ***** */
 .arrow {
   border: solid #ffffff;
-  border-width: 0 3px 3px 0;
+  border-width: 0 10px 10px 0;
   display: inline-block;
-  padding: 10px;
+  padding: 20px;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   text-align: center;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -177,7 +177,7 @@ p {
 }
 
 .content {
-  /* gill sans */
+  /* alternative gill sans */
   font-family: "Helvetica Neue", Helvetica;
   color: #333333;
   padding: 0px 0px;
