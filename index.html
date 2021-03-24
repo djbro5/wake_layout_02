@@ -21,7 +21,7 @@
     <!-- Slide out menu -->
     <div id="mySidepanel" class="sidepanel">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="javascript:void(0)" onclick="closeNav()" style="color:#D5D1D0">Home</a>
+      <a href="#home" onclick="topFunction()" style="color:#D5D1D0">Home</a>
       <a href="#construction" onclick="closeNav()">Construction</a>
       <a href="#carpentry" onclick="closeNav()"> Carpentry</a>
       <a href="#linings" onclick="closeNav()">Linings</a>
@@ -31,7 +31,7 @@
       <a href="#projects" onclick="closeNav()">Projects</a>
     </div>
   
-  <!-- Wake header headings section -->
+  <!-- Wake headings with hamburger section -->
   <div class="fixed-bg bg-2">
     <div class="row">
     <!-- column 1.1 WAKE logo -->
@@ -58,7 +58,7 @@
       <div class="overlay">Scroll down</div>
     </div>  
   </div>
-  <!--  Wake header headings section end -->
+  <!--  section end -->
 
  
     <div class="container">
@@ -407,6 +407,12 @@
   }
   
   function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     document.getElementById("mySidepanel").style.width = "0";
   }
 
