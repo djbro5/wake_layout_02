@@ -61,7 +61,7 @@ p{
   padding: 5px 1px 5px 50px;
   text-decoration: none;
   font-family:  "Helvetica Neue", Helvetica;
-  font-size: 1.75em;
+  font-size: 2.0em;
   color: #ffffff;
   display: block;
   transition: 0.3s;
@@ -220,7 +220,7 @@ p {
   text-align: justify;
 }
 
-hr.solid {
+#rule {
   border: 10px solid;
   color: #000000;
   margin-top: 5px;
