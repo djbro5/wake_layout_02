@@ -3,11 +3,11 @@
  /* @import url('https://fonts.googleapis.com/css?family=Quicksand'); */
  /*@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');*/
 
+/* 10px = 0.625em, 15px = 0.94em, 20px = 1.25em */
 
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-height: 28.125em) {
+  .sidenav {padding-top: 0.94em;}
+  .sidenav a {font-size: 1.125em;}
 } 
 
 .clearfix::after {
@@ -20,15 +20,31 @@ html,body {
   height: 100%;
 } 
 
+/* Cross fade background image 
+    #crossFade img {
+      position:absolute;
+      left:0;
+      -webkit-transition: opacity 2s ease-in-out;
+      -moz-transition: opacity 2s ease-in-out;
+      -o-transition: opacity 2s ease-in-out;
+      transition: opacity 2s ease-in-out;
+    }
+
+    #crossFade img.top:hover {
+      opacity:0;
+    }
+
+    #crossFade img.middle:hover {
+      opacity:0;
+    }
+ cf end */
+
 .wrapper {
   height: 100%;
+  width: 100%;
   padding: 0;
-  font-family:  'Prompt', sans-serif; /*"Helvetica Neue", Helvetica; ------ font-family: 'Prompt', sans-serif; 'Didact Gothic', sans-serif; */
+  font-family:  'Diact Gothic', sans-serif; /*"Helvetica Neue", Helvetica; ------ font-family: 'Prompt', sans-serif; 'Didact Gothic', sans-serif; */
   background-color: #343A40;
-}
-
-p{
-  font-family: 'Prompt', sans-serif; /*"Helvetica Neue", Helvetica; */
 }
 
 
@@ -40,7 +56,7 @@ p{
   height: 34.875em;
   top: 0;
   right: 0px;
-  background-color: #3d4d42;
+  background-color: #343a40;
   opacity: 0.80;
   overflow-x: hidden;
   transition: 0.2s;
@@ -60,7 +76,7 @@ p{
 .sidepanel a {
   padding: 5px 1px 5px 50px;
   text-decoration: none;
-  font-family:  "Helvetica Neue", Helvetica;
+  font-family:  '', sans-serif;
   font-size: 1.75em;
   color: #ffffff;
   display: block;
@@ -74,8 +90,8 @@ p{
 .sidepanel .closebtn {
   position: absolute;
   top: 0;
-  right: 20px;
-  font-size: 36px;
+  right: 1.25em;
+  font-size: 2.25em;
 }
 
 /* hamburger */
@@ -86,13 +102,13 @@ p{
   background-color:transparent;
   color: #000;
   right: 0;
-  padding-right: 10px;
+  padding-right: 0.94em;
   padding-top: 0px;
   border: none;
 }
 
 .openbtn:hover {
-  background-color: #3d4d42;
+  background-color: #343A40;
 }
 /* end */
 
@@ -101,38 +117,49 @@ p{
   border: solid #ffffff;
   border-width: 0 7px 7px 0;
   display: inline-block;
-  padding: 15px;
+  padding: 0.2em;
   position: absolute;
-  bottom: 15px;
+  bottom: 0.2em;
   text-align: center;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 /* end */
 
-
-
 .picture {
   display:inline-block;
 }
 
-/* ***** Adelaide oval hotel background ***** */
+.bg-1 {
+  background-color: #333333;
+  background-repeat:no-repeat;
+  background-size: cover; 
+}
+
+/* ***** Adelaide oval hotel background ***** images/Adelaide _Oval_Boutique_Hotel_front_BW.jpg */
 .bg-2 {
-  background-image: url("images/Adelaide _Oval_Boutique_Hotel_front.jpg");
-  background-size: cover;
+
+  background-image: url("images/Adelaide _Oval_Boutique_Hotel_front_3D_02.jpg");
+  background-image: url("images/Circular_spoke_ceiling_03.jpg");
+    /*
+  background-image: url("images/Adelaide\ _Oval_Boutique_Hotel_front_3D.jpg");
+    */
+  background-color: #333333;
+  background-repeat:no-repeat;
+  background-size: cover; 
 }
 
 .col-sm-4 {
-  padding: 10px;
+  padding: 0.62rem;
 }
 
 .fixed-bg {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   background-position: center;
   height: 100%; 
-  width: 100%;
+  width: 100%; 
   font-size: 100px;
   color: #333333; 
   text-align: center;
@@ -142,9 +169,9 @@ p{
 .fixed-bg h1 {
   display: table-cell;
   vertical-align: middle;
-  font-family: 'Prompt', sans-serif; /* "Helvetica Neue", Helvetica; */
+  font-family: 'Diact Gothic', sans-serif; /* "Helvetica Neue", Helvetica; 'Diact Gothic', sans-serif; */
   font-weight: 500;
-  font-size: 150px;
+  font-size: 1.0em;
 }
 
 /*
@@ -167,27 +194,35 @@ p{
 h4 {
   padding: 3px;
   font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica;
 }
 
 h3 {
   font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica;
 }
 
-.scroll-bg {
-  background-color:white;
-  font-size: 50px;
-  padding-top: 20px;
+.content-bg {
+  background-color: #ffffff;
+  font-size: 3.125em;
+  padding-top: 1.25em;
   padding-bottom: 10px;
-  padding-left: 50px;
-  color: #fb2b11;
+  padding-left: 3.125em;
+
 }
 
 p {
-  font-size: medium;
+  font-family: 'Prompt', sans-serif; /*"Helvetica Neue", Helvetica; 'Diact Gothic', sans-serif; */
   font-weight: lighter;
 }
 
-.content {
+#main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content{
   /* alternative gill sans */
   font-family: "Helvetica Neue", Helvetica;
   color: #333333;
@@ -207,7 +242,7 @@ p {
 }
 
 .row-bottom-margin { 
-  margin-bottom:10px; 
+  margin-bottom: 0.94em; 
 }
 
 .projects {
@@ -240,32 +275,32 @@ p {
   background-color: #343a40;
   background-size: cover;
   float: left;
-  padding-top: 40px;
+  padding-top: 2.5em;
   width: 100%;
 }
 
 .footerColOne {
   text-align: center; 
   padding-right: 0px;
-  padding-top: 20px;
+  padding-top: 1.25em;
   padding-left: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 0.625em;
 }
 
 .footerColTwo {
   text-align: center;
   padding-right: 0px;
-  padding-top: 20px;
+  padding-top: 1.25em;
   padding-left: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 0.625em;
 }
 
 .footerColThree {
   text-align: center;
   padding-right: 0px;
-  padding-top: 20px;
+  padding-top: 1.25em;
   padding-left: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 0.625em;
 }
 
 

@@ -1,5 +1,8 @@
 <!-- Wake Construction Group landing page -->
 
+<!-- Build using and viewed on 2560 x 1440 pixel screen resolution -->
+<!-- Tested on various device screen resolutions -->
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -9,18 +12,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato&family=Montserrat&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Didact+Gothic&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Didact+Gothic&display=swap" rel="stylesheet">
+  <style>
+      #type {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 200;
+}
+@media screen and (min-width: 768px) {
+    #type {
+        font-size: 23px;
+    }
+}
+  </style>
 </head>
 
 <body>
+
   <!-- wrapper div starts --> 
 <div class="wrapper">
   
@@ -38,23 +50,28 @@
     </div>
   
   <!-- Wake headings with hamburger section -->
-  <div class="fixed-bg bg-2">
+  <!-- sm breakpoint = screen width < 576px -->
+  <!-- <div class="fixed-bg bg-1"></div> -->
+<div class="fixed-bg bg-2">
     <div class="row">
     <!-- column 1.1 WAKE logo -->
-      <div class="container col-sm-6" style="padding-top: 40px; padding-left: 50px;">
-        <img src="images\wake_logo_4_vector.svg" alt="wake logo" class="img-responsive" style="width:40%">
-        <!-- <h2 style="padding-top: 40px;padding-left: 40px; text-align: left;"><b>WAKE CONSTRUCTION GROUP</b></h2> -->
+      <div class="container col-sm-6" style="padding-top: 0.3em; padding-left: 0.7em;">
+      
+        <img src="images/wake_logo_5_WHITE_vector.svg" alt="wake logo" class="img-responsive" style="width:52%">
+       <!--
+        <h2 style="padding-top: 40px;padding-left: 40px; text-align: left;"><b>WAKE CONSTRUCTION GROUP</b></h2>
+       -->
       </div>
       <!-- column 1.2 ☰ -->
       <div class="container col-sm-6">
-        <p style="padding-top: 50px; text-align: left;font-size: 0.7em;"><button class="openbtn" onclick="openNav()">☰</button></p>
+        <p style="padding-top: 1.5em; text-align: left;font-size: 0.7em;"><button class="openbtn" onclick="openNav()">☰</button></p>
       </div>
     </div>
     <div class="row">
       <!-- column 2.0 -->
       <div class="container col-sm-12">
-        <h1 class="display-1" style="line-height: 80%;color: white;opacity:0.80;
-              text-align: left; padding-left: 40px; padding-top: 40px; padding-bottom: 0;">
+        <h1 class="display-1" style="font-size: 1.45em; line-height: 0.8em; color: white;opacity:0.85;
+              text-align: left; padding-left: 0.4em; padding-top: 0.0em; padding-bottom: 0;">
           <b>CONSTRUCTION<br>CARPENTRY<br>LININGS</b>
         </h1> 
       </div>
@@ -63,38 +80,39 @@
       <p id="scroll" onclick="messageFunct()" ><i class="arrow"></i></p>
       <div class="overlay">Scroll down</div>
     </div>  
-  </div>
+</div>
   <!--  section end -->
 
  
-    <div class="container">
+    <div id="main">
       <div class="clearfix"> 
-      <div class="scroll-bg">
-        <div class="content">
+      <div class="content-bg">
+        <div id="content">
 
       <!-- Wake introduction section -->
       <!-- row -->
       <div class="row row-bottom-margin">
         <!-- column 1.1 -->
         <div class="container col-sm-6">
-          <h1 style="padding-bottom: 10px; text-align: left; font-family: 'cabin', sans-serif; color:#333333;">WAKE CONSTRUCTION GROUP</h1>
-          <h3   style="color: #3d4d42;">CONSTRUCTION + CARPENTRY + LININGS</h3>
-          <p style="font-size: 20px; line-height: 31px;">The Wake Construction Group is a long-established construction and contractor company.
-            We provide comprehensive building services to the COMMERCIAL and RESIDENTIAL construction industry and always successfully deliver
-             on projects. Our involvement include multi award-winning projects and our 
-             scope is from large commercial projects to small residential work.
-            We specialise in construction of aged care facilities. Read more about our capabilities by scrolling cursor over the divisions below.</p>
+          <h3 style="padding-bottom: 0.94em; text-align: left;  color:#333333;"><b>WAKE CONSTRUCTION GROUP</b></h3>
+          <h2   style="color: #3d4d42; padding-top: 0.3125em; padding-bottom: 0.3125em;">= CONSTRUCTION + CARPENTRY + LININGS</h2>
+          <p style="font-size: 0.6em; line-height: 1.56em;"> Wake Construction Group is a long-established construction and contractor company.
+            We provide specialist building services to the COMMERCIAL and RESIDENTIAL sectors from large commercial projects to small residential work.
+            Our projects include international hotels, public schools, private schools, community centres, tourist centres, wineries, private housing, and aged care homes. 
+            Read about our specialist capabilities by scrolling cursor over the divisions below.</p>
+            <img src=" images\wake_logo_4_grey_vector.svg" alt="wake logo" class="img-responsive" style="width:40%">
         </div>
         <!-- column 1.2 -->
-        <div class="container col-sm-6" style="padding-bottom: 5px;">
-          <h3 style="color: #000">Why WAKE?</h3>
-          <p style="font-size: 20px; line-height: 31px;">Our methodical approach to  your next project is built from over 40 years experience in 
-            delivering quality buildings and fostering client relationships. Coupled with our values 
-            of trust, honesty, transparency and innovation, it is our dedicated, experienced team that sets us apart, on quality, 
-            on budget and on time.</p>
-            <h3 style="color: #3d4d42;">Proficiency + Knowledge + Experience</h3>   
-            <p style="font-size: 20px; line-height: 31px;">Contact us today to discuss your project needs<br>P - 08 8353 5350 <br>
-              E - <a href="contact.html" style="color:#fb2b11;" >info@wcg.com.au</a></p>
+        <div class="container col-sm-6">
+          <h3 style="color: #000"><b>Why WAKE?</b></h3>
+          <p style="font-size: 0.6em; line-height: 1.56em;  padding-top: 0.5em;">Our methodical approach gained from over 40 years’ experience mean that we 
+            deliver buildings of highest quality, on budget and on time whilst fostering client relationships throughout the life of the project. All our 
+            clients benefit from our values of trust, honesty, transparency, and innovation. Let our dedicated and experienced team specialists discuss your project needs and 
+            demonstrate why Wake Construction Group be an essential contractor for your project.</p>
+            
+            <p style="font-size: 0.6em; line-height: 1.56em;">Contact us today to discuss your project needs<br>P - 08 8353 5350 <br>
+              E - <a href="contact.html" style="color:#D19A3F;" >info@wcg.com.au</a></p>
+              <h2 style="color: #3d4d42; padding-top: 0.6em;">= PROFICIENCY + KNOWLEDGE + EXPERIENCE</h2> 
         </div>
       </div>
     </div>
@@ -243,15 +261,15 @@
                           <h3 class="card-title" style="padding-top: 20px;">CONTACT US</h3>
                         </div>
                         <div class="card-text-contact; text-center ">
-                          <hr style="height:2px;border:none;background-color:#ffffff"/>
-                          <h5 style="padding-top: 40px; letter-spacing: 1px;">WAKE CONSTRUCTION GROUP</h5>
-                          <h5 style=" padding-bottom: 40px;">BLD No. G10904</h5>
-                          <hr style="height:2px;border:none;background-color:#ffffff"/>
-                          <h5 style="padding-bottom: 40px; padding-top: 40px;">147-149 William Street <br>Beverley SA 5009</h5>
-                          <hr style="height:2px;border:none;background-color:#ffffff"/>
+                          <hr style="height:2px;border:none;background-color:#333"/>
+                          <h5 style="padding-top: 2.5em; letter-spacing: 1px;">WAKE CONSTRUCTION GROUP</h5>
+                          <h5 style=" padding-bottom: 2.5em;">BLD No. 10904</h5>
+                          <hr style="height:2px;border:none;background-color:#333"/>
+                          <h5 style="padding-bottom: 2.5em; padding-top: 2.5em;">147-149 William Street <br>Beverley SA 5009</h5>
+                          <hr style="height:2px;border:none;background-color:#333"/>
                           <h5 style="padding-top: 35px;">P - 08 8353 5350</h5>
-                          <a href="contact.html" style="color:#fb2b11;" ><h5>E - info@wcg.com.au</h5></a>
-                          <h5 style="padding-bottom: 60px;" >Click for email contact page</h5>   <!-- add media query -->
+                          <a href="contact.html" style="color:#D19A3F;" ><h5>E - info@wcg.com.au</h5></a>
+                          <h5 style="padding-bottom: 12em;" >Click for email contact page</h5>   <!-- add media query -->
                       </div>
                     </div>
                 </div>
@@ -275,7 +293,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="projects">
-              <p style="color: #000; font-size: 20px;">
+              <p style="color: #000; font-size: 0.6em;">
                   Wake Construction Group project capacity range from the small domestic to large commercial and we operate from local Adelaide to remote SA.
                   Our dedicated group of construction specialists develop strong partnerships with clients, architects and consultants to always deliver projects 
                   that exceed client expectations. Hover cursor over image below for project description.                                                             
@@ -374,7 +392,7 @@
           <!-- First column -->
           <div class="container p-3  col-sm-4">
             <div class="footerColOne">
-              <h5>Wake Construction Group<br>BLD No. G10904</h5>
+              <h5>Wake Construction Group<br>BLD No. 10904</h5>
             </div>
           </div>
         
@@ -387,7 +405,7 @@
           <!-- Third column -->
           <div class="container p-3  col-sm-4">
             <div class="footerColThree">
-              <h5>P - 08 8353 5350</h5><br> <a href="contact.html" style="color:#fb2b11;" > <h5>E - info@wcg.com.au</h5></a>
+              <h5>P - 08 8353 5350</h5><br> <a href="contact.html" style="color:#D19a3F;" > <h5>E - info@wcg.com.au</h5></a>
             </div> 
           </div>
       </div>
