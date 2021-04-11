@@ -139,8 +139,12 @@ html,body {
 /* ***** Adelaide oval hotel background ***** images/Adelaide _Oval_Boutique_Hotel_front_BW.jpg */
 .bg-2 {
 
-  background-image: url("images/Adelaide _Oval_Boutique_Hotel_front_3D_02.jpg");
   background-image: url("images/Circular_spoke_ceiling_03.jpg");
+
+  /*
+   background-image: url("images/Adelaide _Oval_Boutique_Hotel_front_3D_02.jpg");
+  */
+ 
     /*
   background-image: url("images/Adelaide\ _Oval_Boutique_Hotel_front_3D.jpg");
     */
@@ -207,7 +211,7 @@ h3 {
   font-size: 3.125em;
   padding-top: 1.25em;
   padding-bottom: 10px;
-  padding-left: 3.125em;
+  padding-left: 0.0em;
 
 }
 
@@ -235,6 +239,10 @@ p {
 
 .card-text {
   color: #000;
+}
+
+.card-text {
+  font-size: 0.5em;
 }
 
 .card-text-contact {
