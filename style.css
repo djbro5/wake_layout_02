@@ -8,6 +8,7 @@
   display: table;
 }
 
+/* font-size vw fluid element for fluid typography */
 html,body {
   height: 100%;
   font-size: 0.8vw;
@@ -93,7 +94,7 @@ html,body {
   position: fixed;
   cursor: pointer;
   background-color:transparent;
-  color: #000;
+  color: #3F9E9B;
   right: 0;
   padding-right: 0.94em;
   padding-top: 0px;
@@ -107,7 +108,7 @@ html,body {
 
 /* ***** Scroll arrow ***** */
 .arrow {
-  border: solid #ffffff;
+  border: solid #fff;
   border-width: 0 7px 7px 0;
   display: inline-block;
   padding: 0.2em;
@@ -129,21 +130,13 @@ html,body {
   background-size: cover; 
 }
 
-/* ***** Adelaide oval hotel background ***** images/Adelaide _Oval_Boutique_Hotel_front_BW.jpg */
+/* ***** Adelaide oval hotel background ***** */
 .bg-2 {
-
   background-image: url("images/Circular_spoke_ceiling_03.jpg");
-
-  /*
-   background-image: url("images/Adelaide _Oval_Boutique_Hotel_front_3D_02.jpg");
-  */
- 
-    /*
-  background-image: url("images/Adelaide\ _Oval_Boutique_Hotel_front_3D.jpg");
-    */
   background-color: #333333;
   background-repeat:no-repeat;
   background-size: cover; 
+  background-position:center;
 }
 
 .col-sm-4 {
